@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {data} from '../data/data.js'
 import filled_star from '../assets/filled_star.png'
 import star from '../assets/star.png'
+import { Link } from 'react-router-dom'
 
 const Foods = () => {
 
@@ -108,9 +109,11 @@ const Foods = () => {
                                 <img className='w-[20px] h-[20px]' src={filled_star} alt='star'/>
                                 <img className='w-[18px] h-[18px]' src={star} alt='star'/>
                             </div>
-                            <button 
-                                className='text-white bg-[#00A911] gap-10 p-[8px] w-[100px] h-[35px] text-[14px] justify-center flex items-center hover:scale-105 duration-300'>Shop Now
-                            </button>
+                            <Link to='cart'>
+                                <button 
+                                    className='text-white bg-[#00A911] gap-10 p-[8px] w-[100px] h-[35px] text-[14px] justify-center flex items-center hover:scale-105 duration-300'>Shop Now
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 ))}
