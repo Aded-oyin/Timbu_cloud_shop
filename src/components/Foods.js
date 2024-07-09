@@ -4,13 +4,13 @@ import filled_star from '../assets/filled_star.png'
 import star from '../assets/star.png'
 
 const Foods = () => {
-    //console.log(data)
+
     const [foods] = useState(data)
 
 
   return (
 
-    <div className='w-[600px] md:w-[1200px] mx-auto justify-between items-center'>
+    <div name='foods' className='w-[600px] md:w-[1200px] mx-auto justify-between items-center'>
         <div className='flex justify-between items-center h-20 w-full mx-auto px-4 shadow'>
             <h1 className='text-3xl'>Featured Products</h1>
             <p>Home - Shop</p>

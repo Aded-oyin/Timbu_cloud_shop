@@ -4,6 +4,7 @@ import Strawberries from '../assets/Strawberries.png'
 import filled_star from '../assets/filled_star.png'
 import star from '../assets/star.png'
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   return (
@@ -111,8 +112,12 @@ const Cart = () => {
               </div>
 
               <div className='md:mt-[200px] items-center justify-center'>
+                <Link to='/'>
                 <button className='#C7EDBD h-[43.333px]  md:h-[70px] md:gap-[17.99px] md:p-[14.39px] text-center text-[20px] w-[400px] md:w-full my-5 bg-[#C7EDBD]'>Continue Shopping</button>
-                <button className='#C7EDBD h-[43.333px]  md:h-[70px] md:gap-[17.99px] md:p-[14.39px] text-center text-[20px] w-[400px] md:w-full my-5 bg-[#00A911]'>Proceed to Checkout</button>
+                </Link>
+                <Link to='checkout'>
+                  <button className='#C7EDBD h-[43.333px]  md:h-[70px] md:gap-[17.99px] md:p-[14.39px] text-center text-[20px] w-[400px] md:w-full my-5 bg-[#00A911]'>Proceed to Checkout</button>
+                </Link>
               </div>
 
             </div>
